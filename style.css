@@ -88,7 +88,7 @@ form i {
   border: 1px solid var(--booki-grey);
 }
 
-form input {
+form input[type="text"] {
   border-radius: 0px;
   border: 1px solid var(--booki-grey);
   width: 250px;
@@ -119,6 +119,10 @@ form button:hover {
 
 form button:active {
   background-color: var(--booki-blue-active);
+}
+
+.filters {
+  display: flex;
 }
 
 @media screen and (min-width: 992px) {
