@@ -5,6 +5,7 @@
   --booki-blue-light: #deebff;
   --booki-grey: #f2f2f2;
   --booki-bg: #ffffff;
+  --booki-empty-star: hsl(263, 9%, 82%);
 
   --booki-width: 1340px;
 
@@ -158,11 +159,43 @@ form button:active {
 }
 
 .results-cards li {
-  background-color: tomato;
+  background-color: white;
   margin: 0 15px 30px 15px;
   flex: 0 1 calc(33.33% - 30px);
-  height: 200px;
-  box-shadow: 2px 0px 0 0 inset;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.results-cards img {
+  height: 115px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.results-cards h3,
+.results-cards span {
+  margin: 0px 10px;
+}
+
+.results-cards h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.results-cards span {
+  font-size: 14px;
+}
+
+.fas.fa-star {
+  color: var(--booki-blue);
+  letter-spacing: -3px;
+}
+
+.fa-star.empty {
+  color: var(--booki-empty-star);
 }
 
 @media screen and (min-width: 992px) {
