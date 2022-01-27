@@ -10,7 +10,6 @@
 
   font-family: Raleway, sans-serif;
   font-size: 16px;
-  box-sizing: border-box;
 
   background-color: var(--booki-bg);
 }
@@ -63,9 +62,14 @@ main {
   margin: auto;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 22px;
   font-weight: bold;
+}
+
+h2 {
+  margin: 44px 0 22px 44px;
 }
 
 form i,
@@ -124,6 +128,41 @@ form button:active {
 
 .filters {
   display: flex;
+}
+
+.lodging {
+  display: flex;
+  background-color: lightcoral;
+}
+
+.lodging .results,
+.lodging .most-popular {
+  background-color: var(--booki-grey);
+}
+
+.lodging .results {
+  flex: 0 1 calc((((var(--booki-width) - 80px) / 3) * 2) + 40px);
+}
+
+.lodging .most-popular {
+  flex: 0 1 calc((var(--booki-width) - 80px) / 3);
+  margin-left: 40px;
+}
+
+.results-cards {
+  padding: 0px;
+  margin: 0 29px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.results-cards li {
+  background-color: tomato;
+  margin: 0 15px 30px 15px;
+  flex: 0 1 calc(33.33% - 30px);
+  height: 200px;
+  box-shadow: 2px 0px 0 0 inset;
 }
 
 @media screen and (min-width: 992px) {
