@@ -200,8 +200,14 @@ form button:active {
   color: var(--booki-empty-star);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
+  .results-cards li {
+    flex-basis: calc(50% - 30px);
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .results-cards li {
+    flex-basis: calc(100% - 30px);
+  }
 }
