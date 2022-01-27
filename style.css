@@ -178,6 +178,7 @@ form button:active {
 .results-cards h3,
 .results-cards span {
   margin: 0px 10px;
+  margin-top: 12px;
 }
 
 .results-cards h3 {
@@ -187,6 +188,7 @@ form button:active {
 
 .results-cards span {
   font-size: 14px;
+  display: block;
 }
 
 .fas.fa-star {
