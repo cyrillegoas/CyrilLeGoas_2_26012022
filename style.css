@@ -350,6 +350,39 @@ form button:active {
   box-sizing: border-box;
 }
 
+/* 
+  FOOTER
+*/
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(var(--booki-width) + 100px);
+  background-color: var(--booki-grey);
+  display: flex;
+  padding: 50px;
+}
+
+footer section {
+  flex: 0 1 450px;
+}
+
+footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 22px;
+}
+
+footer li {
+  margin-top: 18px;
+}
+
 @media screen and (max-width: 992px) {
   .results-cards li {
     flex-basis: calc(50% - 30px);
