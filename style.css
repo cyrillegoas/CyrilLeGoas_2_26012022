@@ -237,7 +237,7 @@ form button:active {
   width: 100%;
 }
 
-.most-popular-cards li:not(:last-child) {
+.most-popular-cards li {
   margin-bottom: 33px;
 }
 
