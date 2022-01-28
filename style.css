@@ -113,7 +113,7 @@ form button {
   font-family: inherit;
 }
 
-form label {
+.search-wrapper {
   display: flex;
   margin-bottom: 30px;
 }
@@ -159,9 +159,17 @@ form button:active {
   background-color: var(--booki-blue-active);
 }
 
+/* 
+  FILTERS
+*/
+
 .filters {
   display: flex;
 }
+
+/* 
+  LODGINGS
+*/
 
 .lodging {
   display: flex;
