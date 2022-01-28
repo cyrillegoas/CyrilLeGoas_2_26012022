@@ -207,6 +207,14 @@ form button:active {
   display: block;
 }
 
+.results > a {
+  display: block;
+  padding-top: 14px;
+  margin-left: 44px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .most-popular > div {
   display: flex;
   justify-content: space-between;
