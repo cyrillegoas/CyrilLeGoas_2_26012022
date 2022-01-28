@@ -172,6 +172,7 @@ form button:active {
 }
 
 .results-cards img {
+  display: block;
   height: 115px;
   width: 100%;
   object-fit: cover;
@@ -183,6 +184,12 @@ form button:active {
 .results-cards span {
   margin: 0px 10px;
   margin-top: 12px;
+  line-height: 12px;
+}
+
+.results-cards span:last-of-type {
+  margin-top: 8px;
+  margin-bottom: 6px;
 }
 
 .most-popular-cards h3,
