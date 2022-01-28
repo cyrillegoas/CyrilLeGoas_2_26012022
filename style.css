@@ -158,13 +158,17 @@ form button:active {
   flex-wrap: wrap;
 }
 
-.results-cards li {
+.results-cards li,
+.most-popular-cards li {
   background-color: white;
-  margin: 0 15px 30px 15px;
-  flex: 0 1 calc(33.33% - 30px);
   border-radius: 15px;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.results-cards li {
+  margin: 0 15px 30px 15px;
+  flex: 0 1 calc(33.33% - 30px);
 }
 
 .results-cards img {
@@ -181,14 +185,59 @@ form button:active {
   margin-top: 12px;
 }
 
-.results-cards h3 {
+.most-popular-cards h3,
+.most-popular-cards span {
+  margin: 0px 20px;
+  margin-top: 14px;
+}
+
+.most-popular-cards span:last-of-type {
+  margin-top: 40px;
+}
+
+.results-cards h3,
+.most-popular-cards h3 {
   font-size: 16px;
   font-weight: bold;
 }
 
-.results-cards span {
+.results-cards span,
+.most-popular-cards span {
   font-size: 14px;
   display: block;
+}
+
+.most-popular-cards {
+  padding: 0px;
+  margin: 0 37px;
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular-cards a {
+  display: flex;
+}
+
+.most-popular-cards .infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular-cards li {
+  width: 100%;
+}
+
+.most-popular-cards li:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.most-popular-cards img {
+  width: 127px;
+  aspect-ratio: 127 / 115;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .fas.fa-star {
