@@ -133,12 +133,12 @@ form button:active {
 
 .lodging {
   display: flex;
-  background-color: lightcoral;
 }
 
 .lodging .results,
 .lodging .most-popular {
   background-color: var(--booki-grey);
+  border-radius: 15px;
 }
 
 .lodging .results {
