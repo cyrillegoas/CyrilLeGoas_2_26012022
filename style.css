@@ -207,6 +207,16 @@ form button:active {
   display: block;
 }
 
+.most-popular > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.most-popular > div i {
+  margin: 44px 44px 22px 0px;
+  font-size: 24px;
+}
+
 .most-popular-cards {
   padding: 0px;
   margin: 0 37px;
