@@ -75,6 +75,18 @@ h2 {
   margin: 44px 0 22px 44px;
 }
 
+p {
+  margin-bottom: 20px;
+}
+
+/* 
+  FORM
+*/
+
+form {
+  margin-bottom: 40px;
+}
+
 form i,
 form input,
 form button {
@@ -86,6 +98,7 @@ form button {
 
 form label {
   display: flex;
+  margin-bottom: 30px;
 }
 
 form i {
