@@ -135,6 +135,7 @@ form button:active {
 
 .lodging {
   display: flex;
+  margin-bottom: 65px;
 }
 
 .lodging .results,
@@ -273,6 +274,80 @@ form button:active {
 
 .fa-star.empty {
   color: var(--booki-empty-star);
+}
+
+/* 
+  ACTIVITIES
+*/
+
+.activities {
+  margin-bottom: 60px;
+}
+
+.activities h2 {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+}
+
+.activities .cards {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 445px;
+  padding: 0;
+  margin: 0;
+}
+
+.activities li {
+  width: calc((100% - 132px) / 4);
+}
+
+.activities li.full-size {
+  flex: 0 0 445px;
+}
+
+.activities li.half-ish {
+  aspect-ratio: 302 / 236;
+  flex: 0 0 236px;
+}
+
+.activities li.small {
+  aspect-ratio: 302 / 165;
+  flex: 0 0 165px;
+}
+
+.activities a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.activities img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 1px 1px;
+}
+
+.activities h3 {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 992px) {
