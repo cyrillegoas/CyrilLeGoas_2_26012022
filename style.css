@@ -242,17 +242,17 @@ form button:active {
   margin-bottom: 65px;
 }
 
-.lodging .results,
-.lodging .most-popular {
+.results,
+.most-popular {
   background-color: var(--booki-grey);
   border-radius: 15px;
 }
 
-.lodging .results {
+.results {
   flex: 0 1 calc((((var(--booki-width) - 80px) / 3) * 2) + 40px);
 }
 
-.lodging .most-popular {
+.most-popular {
   flex: 0 1 calc((var(--booki-width) - 80px) / 3);
   margin-left: 40px;
 }
@@ -520,8 +520,41 @@ footer li {
 }
 
 @media screen and (max-width: 992px) {
+  /* 
+    LODGING
+  */
+  .lodging {
+    flex-direction: column-reverse;
+  }
+
+  /* 
+    LODGING - RESULTS
+  */
   .results-cards li {
     flex-basis: calc(50% - 30px);
+  }
+
+  /* 
+    LODGING - MOST POPULAR
+  */
+  .most-popular {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+
+  .most-popular-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .most-popular li {
+    flex-basis: calc(33.33% - 30px);
+  }
+
+  .most-popular-cards img {
+    width: 75px;
+    aspect-ratio: 75 / 197;
+    object-fit: cover;
   }
 }
 
