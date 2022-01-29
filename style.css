@@ -351,6 +351,7 @@ form button:active {
 
 .most-popular-cards a {
   display: flex;
+  padding: 5px;
 }
 
 .most-popular-cards .infos {
