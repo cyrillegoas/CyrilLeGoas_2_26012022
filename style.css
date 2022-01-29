@@ -264,6 +264,7 @@ form button:active {
 .results {
   padding: 0px 29px;
   padding-top: 44px;
+  box-sizing: border-box;
 }
 
 .results h2 {
@@ -349,9 +350,11 @@ form button:active {
 /* 
   LODGING - MOST POPULAR
 */
+
 .most-popular {
   padding: 0px 37px;
   padding-top: 44px;
+  box-sizing: border-box;
 }
 
 .most-popular > div {
