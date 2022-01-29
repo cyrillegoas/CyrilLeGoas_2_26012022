@@ -4,6 +4,7 @@
   --booki-blue-active: #9ec5ff;
   --booki-blue-light: hsl(216, 100%, 94%);
   --booki-grey: hsl(0, 0%, 95%);
+  --booki-shadow-grey: hsl(0, 0%, 85%);
   --booki-bg: hsl(0, 0%, 100%);
   --booki-empty-star: hsl(263, 9%, 82%);
 
@@ -268,6 +269,7 @@ form button:active {
   background-color: white;
   border-radius: 15px;
   box-sizing: border-box;
+  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
 }
 
 .results-cards a {
@@ -438,7 +440,7 @@ form button:active {
   display: block;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 1px 1px;
+  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
 }
 
 .activities h3 {
