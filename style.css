@@ -72,7 +72,8 @@ h2 {
 }
 
 h2 {
-  margin: 44px 0 22px 44px;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
 p {
@@ -256,9 +257,22 @@ form button:active {
   margin-left: 40px;
 }
 
+/* 
+  LODGINGS - RESULTS
+*/
+
+.results {
+  padding: 0px 29px;
+  padding-top: 44px;
+}
+
+.results h2 {
+  margin-left: 15px;
+}
+
 .results-cards {
   padding: 0px;
-  margin: 0 29px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -332,19 +346,29 @@ form button:active {
   font-weight: bold;
 }
 
+/* 
+  LODGING - MOST POPULAR
+*/
+.most-popular {
+  padding: 0px 37px;
+  padding-top: 44px;
+}
+
 .most-popular > div {
   display: flex;
   justify-content: space-between;
+  margin-left: ;
 }
 
 .most-popular > div i {
-  margin: 44px 44px 22px 0px;
+  margin: 0px;
+  margin-bottom: 22px;
   font-size: 24px;
 }
 
 .most-popular-cards {
   padding: 0px;
-  margin: 0 37px;
+  margin: 0px;
   display: flex;
   flex-direction: column;
 }
