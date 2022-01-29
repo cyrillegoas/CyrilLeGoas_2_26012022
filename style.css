@@ -357,7 +357,6 @@ form button:active {
 .most-popular > div {
   display: flex;
   justify-content: space-between;
-  margin-left: ;
 }
 
 .most-popular > div i {
