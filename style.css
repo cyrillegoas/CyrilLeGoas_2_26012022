@@ -219,7 +219,7 @@ form button:active {
   background-color: hsl(0, 0%, 72%);
 }
 
-.icon-container label:hover span:last-of-type {
+.icon-container:hover span:last-of-type {
   background-color: hsl(210, 100%, 95%);
 }
 
