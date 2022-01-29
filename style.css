@@ -268,6 +268,10 @@ form button:active {
   background-color: white;
   border-radius: 15px;
   box-sizing: border-box;
+}
+
+.results-cards a {
+  display: block;
   padding: 5px;
 }
 
