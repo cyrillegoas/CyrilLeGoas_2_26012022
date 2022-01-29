@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
@@ -45,21 +45,52 @@
         </div>
         <div class="filters">
           <span>Filters</span>
-          <label for="economic">
-            <input type="radio" id="economic" name="filters" value="economic" />
-            <span id="money-bill">Économique</span>
+          <label for="filter-eco" class="icon-container">
+            <span class="fa-stack filter-icon">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-money-bill-wave fa-stack-1x icon-foreground"></i>
+            </span>
+            <input id="filter-eco" type="checkbox" name="filters" value="eco" />
+            <span>Économique</span>
           </label>
-          <label for="familly">
-            <input type="radio" id="familly" name="filters" value="familly" />
-            <span id="child">Familial</span>
+          <label for="filter-familly" class="icon-container">
+            <span class="fa-stack filter-icon">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-child fa-stack-1x icon-foreground"></i>
+            </span>
+            <input
+              id="filter-familly"
+              type="checkbox"
+              name="filters"
+              value="familly"
+            />
+            <span>Familial</span>
           </label>
-          <label for="romantic">
-            <input type="radio" id="romantic" name="filters" value="romantic" />
-            <span id="heart">Romantique</span>
+          <label for="filter-romantic" class="icon-container">
+            <span class="fa-stack filter-icon">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-heart fa-stack-1x icon-foreground"></i>
+            </span>
+            <input
+              id="filter-romantic"
+              type="checkbox"
+              name="filters"
+              value="romantic"
+            />
+            <span>Romantique</span>
           </label>
-          <label for="pets">
-            <input type="radio" id="pets" name="filters" value="pets" />
-            <span id="dog">Animaux autorisés</span>
+          <label for="filter-pets" class="icon-container">
+            <span class="fa-stack filter-icon">
+              <i class="fas fa-circle fa-stack-2x icon-background"></i>
+              <i class="fas fa-dog fa-stack-1x icon-foreground"></i>
+            </span>
+            <input
+              id="filter-pets"
+              type="checkbox"
+              name="filters"
+              value="pets"
+            />
+            <span>Animaux autorisés</span>
           </label>
         </div>
       </form>
