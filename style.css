@@ -16,6 +16,10 @@
   background-color: var(--booki-bg);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0 50px;
@@ -266,6 +270,92 @@ p.results-info i {
 }
 
 /* 
+CARDS
+*/
+.results-cards li.card {
+  margin: 0 15px 30px 15px;
+  flex: 0 1 calc(33.33% - 30px);
+}
+
+.card {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
+}
+
+.card a {
+  display: flex;
+  padding: 5px;
+  height: 100%;
+}
+
+.card.img-top a {
+  flex-direction: column;
+}
+
+.card div.card-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card.img-top div.card-infos {
+  height: 100%;
+  padding: 12px 10px 6px 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.card span {
+  font-size: 14px;
+  display: block;
+  margin-top: 8px;
+}
+
+.card.img-top img {
+  display: block;
+  height: 115px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* todo: the following is related to the most popular cards and need some reformating */
+
+.most-popular-cards h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.most-popular-cards span {
+  font-size: 14px;
+  display: block;
+}
+
+.most-popular-cards li {
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
+}
+
+.most-popular-cards h3,
+.most-popular-cards span {
+  margin: 0px 20px;
+  margin-top: 14px;
+}
+
+.most-popular-cards span:last-of-type {
+  margin-top: 40px;
+}
+
+/* 
   LODGINGS - RESULTS
 */
 
@@ -286,67 +376,6 @@ p.results-info i {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.results-cards li,
-.most-popular-cards li {
-  background-color: white;
-  border-radius: 15px;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
-}
-
-.results-cards a {
-  display: block;
-  padding: 5px;
-  height: 100%;
-}
-
-.results-cards li {
-  margin: 0 15px 30px 15px;
-  flex: 0 1 calc(33.33% - 30px);
-}
-
-.results-cards img {
-  display: block;
-  height: 115px;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.results-cards h3,
-.results-cards span {
-  margin: 0px 10px;
-  margin-top: 12px;
-}
-
-.results-cards span:last-of-type {
-  margin-top: 8px;
-  margin-bottom: 6px;
-}
-
-.most-popular-cards h3,
-.most-popular-cards span {
-  margin: 0px 20px;
-  margin-top: 14px;
-}
-
-.most-popular-cards span:last-of-type {
-  margin-top: 40px;
-}
-
-.results-cards h3,
-.most-popular-cards h3 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.results-cards span,
-.most-popular-cards span {
-  font-size: 14px;
-  display: block;
 }
 
 .results > a {
@@ -435,7 +464,7 @@ p.results-info i {
   padding: 0;
 }
 
-.activities .cards {
+.activities .activities-cards {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -539,7 +568,7 @@ footer li {
   /* 
     LODGING - RESULTS
   */
-  .results-cards li {
+  .results-cards li.card {
     flex-basis: calc(50% - 30px);
   }
 
@@ -568,7 +597,7 @@ footer li {
 }
 
 @media screen and (max-width: 768px) {
-  .results-cards li {
+  .results-cards li.card {
     flex-basis: calc(100% - 30px);
   }
 }
