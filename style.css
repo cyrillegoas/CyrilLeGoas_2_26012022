@@ -272,9 +272,14 @@ p.results-info i {
 /* 
 CARDS
 */
+
 .results-cards li.card {
   margin: 0 15px 30px 15px;
   flex: 0 1 calc(33.33% - 30px);
+}
+
+.most-popular-cards li.card {
+  margin-bottom: 33px;
 }
 
 .card {
@@ -301,8 +306,12 @@ CARDS
 }
 
 .card.img-top div.card-infos {
-  height: 100%;
   padding: 12px 10px 6px 10px;
+  height: 100%;
+}
+
+.card.img-side div.card-infos {
+  padding: 14px 20px 6px 20px;
 }
 
 .card h3 {
@@ -326,33 +335,22 @@ CARDS
   border-top-right-radius: 10px;
 }
 
-/* todo: the following is related to the most popular cards and need some reformating */
-
-.most-popular-cards h3 {
-  font-size: 16px;
-  font-weight: bold;
+.card.img-side img {
+  width: 127px;
+  aspect-ratio: 127 / 115;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
-.most-popular-cards span {
-  font-size: 14px;
-  display: block;
+.fas.fa-star {
+  color: var(--booki-blue);
+  letter-spacing: -3px;
 }
 
-.most-popular-cards li {
-  background-color: white;
-  border-radius: 15px;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 8px var(--booki-shadow-grey);
-}
-
-.most-popular-cards h3,
-.most-popular-cards span {
-  margin: 0px 20px;
-  margin-top: 14px;
-}
-
-.most-popular-cards span:last-of-type {
-  margin-top: 40px;
+.fa-star.empty {
+  color: var(--booki-empty-star);
 }
 
 /* 
@@ -412,42 +410,6 @@ CARDS
   margin: 0px;
   display: flex;
   flex-direction: column;
-}
-
-.most-popular-cards a {
-  display: flex;
-  padding: 5px;
-}
-
-.most-popular-cards .infos {
-  display: flex;
-  flex-direction: column;
-}
-
-.most-popular-cards li {
-  width: 100%;
-}
-
-.most-popular-cards li {
-  margin-bottom: 33px;
-}
-
-.most-popular-cards img {
-  width: 127px;
-  aspect-ratio: 127 / 115;
-  object-fit: cover;
-  flex-shrink: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.fas.fa-star {
-  color: var(--booki-blue);
-  letter-spacing: -3px;
-}
-
-.fa-star.empty {
-  color: var(--booki-empty-star);
 }
 
 /* 
