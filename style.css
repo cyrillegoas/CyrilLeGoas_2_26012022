@@ -256,10 +256,13 @@ p.results-info i {
   margin-bottom: 65px;
 }
 
-.results,
-.most-popular {
+.lodging section {
   background-color: var(--booki-grey);
   border-radius: 15px;
+}
+
+.lodging h2 {
+  margin-left: 15px;
 }
 
 .results {
@@ -275,13 +278,12 @@ p.results-info i {
 CARDS
 */
 
-.results-cards li.card {
+li.card {
   margin: 0 15px 30px 15px;
-  flex: 0 1 calc(33.33% - 30px);
 }
 
-.most-popular-cards li.card {
-  margin-bottom: 33px;
+.results-cards li.card {
+  flex: 0 1 calc(33.33% - 30px);
 }
 
 .card {
@@ -362,10 +364,6 @@ CARDS
   padding-top: 44px;
 }
 
-.results h2 {
-  margin-left: 15px;
-}
-
 .results-cards {
   margin-bottom: 13px;
   display: flex;
@@ -386,7 +384,7 @@ CARDS
 */
 
 .most-popular {
-  padding: 0px 37px;
+  padding: 0px 22px;
   padding-top: 44px;
 }
 
@@ -396,6 +394,7 @@ CARDS
 }
 
 .most-popular > div i {
+  margin-right: 15px;
   margin-bottom: 22px;
   font-size: 24px;
 }
