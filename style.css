@@ -19,6 +19,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -53,7 +54,6 @@ header {
 }
 
 nav ul {
-  padding: 0;
   display: flex;
 }
 
@@ -369,7 +369,6 @@ CARDS
 }
 
 .results-cards {
-  padding: 0px;
   margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
@@ -405,7 +404,6 @@ CARDS
 }
 
 .most-popular-cards {
-  padding: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -420,7 +418,6 @@ CARDS
 
 .activities h2 {
   margin-bottom: 27px;
-  padding: 0;
 }
 
 .activities .activities-cards {
@@ -430,7 +427,6 @@ CARDS
   align-content: space-between;
   justify-content: space-between;
   height: 445px;
-  padding: 0;
 }
 
 .activities li {
@@ -496,10 +492,6 @@ footer {
 
 footer section {
   flex: 0 1 450px;
-}
-
-footer ul {
-  padding: 0px;
 }
 
 footer h2 {
