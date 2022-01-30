@@ -328,8 +328,8 @@ CARDS
 }
 
 .card.img-top img {
-  display: block;
   height: 115px;
+  flex-shrink: 0;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 10px;
@@ -338,7 +338,7 @@ CARDS
 
 .card.img-side img {
   width: 127px;
-  aspect-ratio: 127 / 115;
+  aspect-ratio: 127 / 133;
   object-fit: cover;
   flex-shrink: 0;
   border-top-left-radius: 10px;
