@@ -429,29 +429,26 @@ CARDS
   height: 445px;
 }
 
+.activities a {
+  height: 100%;
+  display: block;
+  position: relative;
+}
+
 .activities li {
   width: calc((100% - 132px) / 4);
 }
 
 .activities li.full-size {
-  flex: 0 0 445px;
+  height: 445px;
 }
 
 .activities li.half-ish {
-  aspect-ratio: 302 / 236;
-  flex: 0 0 236px;
+  height: 236px;
 }
 
 .activities li.small {
-  aspect-ratio: 302 / 165;
-  flex: 0 0 165px;
-}
-
-.activities a {
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: relative;
+  height: 165px;
 }
 
 .activities img {
