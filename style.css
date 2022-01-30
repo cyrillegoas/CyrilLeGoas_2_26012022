@@ -285,7 +285,6 @@ CARDS
 }
 
 .card {
-  box-sizing: border-box;
   background-color: white;
   border-radius: 15px;
   box-shadow: 3px 3px 8px var(--booki-shadow-grey);
@@ -361,7 +360,6 @@ CARDS
 .results {
   padding: 0px 29px;
   padding-top: 44px;
-  box-sizing: border-box;
 }
 
 .results h2 {
@@ -390,7 +388,6 @@ CARDS
 .most-popular {
   padding: 0px 37px;
   padding-top: 44px;
-  box-sizing: border-box;
 }
 
 .most-popular > div {
@@ -471,7 +468,6 @@ CARDS
   background-color: white;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  box-sizing: border-box;
 }
 
 /* 
@@ -479,7 +475,6 @@ CARDS
 */
 
 footer {
-  box-sizing: border-box;
   width: 100%;
   max-width: calc(var(--booki-width) + 100px);
   background-color: var(--booki-grey);
