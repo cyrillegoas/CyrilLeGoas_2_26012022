@@ -282,6 +282,10 @@ li.card {
   margin: 0 15px 30px 15px;
 }
 
+li.card:hover {
+  transform: scale(1.03);
+}
+
 .results-cards li.card {
   flex: 0 1 calc(33.33% - 30px);
 }
@@ -379,6 +383,10 @@ li.card {
   font-weight: bold;
 }
 
+.results > a:hover {
+  color: var(--booki-blue);
+}
+
 /* 
   LODGING - MOST POPULAR
 */
@@ -433,6 +441,10 @@ li.card {
 
 .activities li {
   width: calc((100% - 132px) / 4);
+}
+
+.activities li:hover {
+  transform: scale(1.03);
 }
 
 .activities li.full-size {
@@ -493,6 +505,10 @@ footer h2 {
 
 footer li {
   margin-top: 18px;
+}
+
+footer a:hover {
+  color: var(--booki-blue);
 }
 
 @media screen and (max-width: 992px) {
