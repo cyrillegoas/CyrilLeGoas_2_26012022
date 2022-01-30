@@ -291,6 +291,7 @@ form button:active {
 .results-cards a {
   display: block;
   padding: 5px;
+  height: 100%;
 }
 
 .results-cards li {
