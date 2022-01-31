@@ -663,6 +663,15 @@ footer a:hover {
 
   h1 {
     margin-top: 36px;
+    padding: 0px 20px;
+  }
+
+  p {
+    padding: 0px 20px;
+  }
+
+  p.results-info {
+    margin-left: 0px;
   }
 
   /* 
@@ -700,8 +709,20 @@ footer a:hover {
   }
 
   /* 
+    MAIN
+  */
+
+  main {
+    padding: 0px;
+  }
+
+  /* 
     FORM
   */
+
+  form {
+    padding: 0px 20px;
+  }
 
   .search-form button span:first-of-type {
     display: none;
@@ -719,8 +740,12 @@ footer a:hover {
   }
 
   /* 
-  SEARCH FORM - FILTERS
+    SEARCH FORM - FILTERS
   */
+
+  .filters span {
+    margin-left: 0px;
+  }
 
   .filters span:first-of-type {
     flex-basis: 100%;
