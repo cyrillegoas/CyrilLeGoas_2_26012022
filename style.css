@@ -166,6 +166,7 @@ p {
   background-color: var(--booki-blue);
   color: white;
   font-size: 18px;
+  font-weight: bold;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 1px solid var(--booki-blue);
