@@ -575,6 +575,7 @@ footer a:hover {
   /* 
     LODGING - MOST POPULAR
   */
+
   .most-popular-cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -725,7 +726,7 @@ footer a:hover {
   }
 
   .search-wrapper {
-    width: 100%;
+    width: auto;
   }
 
   .search-wrapper > input {
@@ -764,6 +765,7 @@ footer a:hover {
   /* 
     LODGING - RESULTS
   */
+
   .lodging section.results {
     padding: 0px 5px;
     padding-top: 44px;
@@ -794,6 +796,7 @@ footer a:hover {
   /* 
     ACTIVITIES
   */
+
   .activities {
     padding: 0px 20px;
   }
@@ -811,5 +814,14 @@ footer a:hover {
   .activities li.half-ish,
   .activities li.small {
     height: 190px;
+  }
+
+  /* 
+    FOOTER
+  */
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
