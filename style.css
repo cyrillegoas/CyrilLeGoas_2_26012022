@@ -754,6 +754,11 @@ footer a:hover {
   /* 
     LODGING - RESULTS
   */
+  .lodging section.results {
+    padding: 0px 5px;
+    padding-top: 44px;
+    background-color: white;
+  }
 
   .results-cards li.card {
     flex-basis: calc(100% - 30px);
@@ -763,6 +768,15 @@ footer a:hover {
     LODGING - MOST POPULAR
   */
 
+  .lodging section {
+    border-radius: initial;
+  }
+
+  .most-popular {
+    padding: 0px 5px;
+    padding-top: 44px;
+  }
+
   .most-popular-cards li.card {
     flex-basis: calc(100% - 30px);
   }
@@ -770,6 +784,9 @@ footer a:hover {
   /* 
     ACTIVITIES
   */
+  .activities {
+    padding: 0px 20px;
+  }
 
   .activities .activities-cards {
     height: auto;
