@@ -112,14 +112,6 @@ p {
   margin-bottom: 40px;
 }
 
-.search-wrapper i,
-.search-wrapper input,
-.search-wrapper button {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 15px 15px;
-}
-
 .search-wrapper input,
 .search-wrapper button {
   font-family: inherit;
@@ -128,10 +120,27 @@ p {
 .search-wrapper {
   display: flex;
   margin-bottom: 17px;
+  position: relative;
+  width: fit-content;
+}
+
+.search-wrapper i,
+.search-form button {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-wrapper input {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 15px;
 }
 
 .search-wrapper i {
-  font-size: 26px;
+  height: 100%;
+  font-size: 20px;
   background-color: var(--booki-grey);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -157,6 +166,7 @@ p {
 .search-form button {
   background-color: var(--booki-blue);
   color: white;
+  font-size: 18px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border: 1px solid var(--booki-blue);
@@ -169,6 +179,11 @@ p {
 
 .search-form button:active {
   background-color: var(--booki-blue-active);
+}
+
+.search-form button span:last-of-type {
+  font-size: 20px;
+  display: none;
 }
 
 /* 
@@ -682,6 +697,25 @@ footer a:hover {
   nav ul a:hover {
     box-shadow: none;
     border-color: var(--booki-blue);
+  }
+
+  /* 
+    FORM
+  */
+
+  .search-form button span:first-of-type {
+    display: none;
+  }
+
+  .search-form button span:last-of-type {
+    display: block;
+  }
+
+  .search-form button {
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    right: -30px;
   }
 
   /* 
