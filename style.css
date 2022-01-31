@@ -507,7 +507,8 @@ footer {
 }
 
 footer section {
-  flex: 0 1 450px;
+  flex: 1;
+  margin-right: 22px;
 }
 
 footer h2 {
