@@ -719,6 +719,14 @@ footer a:hover {
   }
 
   /* 
+  SEARCH FORM - FILTERS
+  */
+
+  .filters span:first-of-type {
+    flex-basis: 100%;
+  }
+
+  /* 
     LODGING - RESULTS
   */
 
