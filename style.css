@@ -504,11 +504,13 @@ footer {
   background-color: var(--booki-grey);
   display: flex;
   padding: 50px;
+  padding-bottom: 0px;
 }
 
 footer section {
   flex: 1;
   margin-right: 22px;
+  margin-bottom: 50px;
 }
 
 footer h2 {
@@ -628,6 +630,14 @@ footer a:hover {
 
   #calanques {
     order: 3;
+  }
+
+  /* 
+    FOOTER 
+  */
+
+  footer {
+    flex-direction: column;
   }
 }
 
