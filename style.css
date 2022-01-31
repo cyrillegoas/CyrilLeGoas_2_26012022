@@ -385,7 +385,6 @@ li.card:hover {
 .results-cards {
   margin-bottom: 13px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -531,41 +530,137 @@ footer a:hover {
   */
   .lodging {
     flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .results {
+    flex: 0 1 auto;
+  }
+
+  .most-popular {
+    flex: 0 1 auto;
+    margin-left: 40px;
   }
 
   /* 
     LODGING - RESULTS
   */
-  .results-cards li.card {
-    flex-basis: calc(50% - 30px);
+
+  .results-cards {
+    margin-bottom: 0px;
+  }
+
+  .results > a {
+    margin-bottom: 30px;
   }
 
   /* 
     LODGING - MOST POPULAR
   */
+  .most-popular-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .most-popular {
     margin-left: 0px;
     margin-bottom: 40px;
   }
 
-  .most-popular-cards {
-    flex-direction: row;
-    justify-content: space-between;
+  .most-popular-cards li.card {
+    flex: 0 1 calc(33.33% - 30px);
   }
 
-  .most-popular li {
-    flex-basis: calc(33.33% - 30px);
+  .card.img-side a {
+    flex-direction: column;
   }
 
-  .most-popular-cards img {
-    width: 75px;
-    aspect-ratio: 75 / 197;
+  .card.img-side div.card-infos {
+    padding: 12px 10px 6px 10px;
+    height: 100%;
+  }
+
+  .card.img-side img {
+    height: 115px;
+    flex-shrink: 0;
+    width: 100%;
     object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  /* 
+    ACTIVITIES
+  */
+
+  .activities {
+    margin-bottom: 40px;
+  }
+
+  .activities .activities-cards {
+    height: 934px;
+  }
+
+  .activities li {
+    width: calc((100% - 44px) / 2);
+  }
+
+  .activities li.full-size {
+    height: 445px;
+  }
+
+  .activities li.half-ish {
+    height: 236px;
+  }
+
+  .activities li.small {
+    height: 165px;
+  }
+
+  #notre-dame {
+    order: 1;
+  }
+
+  #longchamp {
+    order: 2;
+  }
+
+  #calanques {
+    order: 3;
   }
 }
 
 @media screen and (max-width: 768px) {
+  /* 
+    LODGING - RESULTS
+  */
   .results-cards li.card {
     flex-basis: calc(100% - 30px);
+  }
+
+  /* 
+    LODGING - MOST POPULAR
+  */
+  .most-popular-cards li.card {
+    flex-basis: calc(100% - 30px);
+  }
+
+  /* 
+    ACTIVITIES
+  */
+
+  .activities .activities-cards {
+    height: auto;
+  }
+
+  .activities li {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .activities li.full-size,
+  .activities li.half-ish,
+  .activities li.small {
+    height: 190px;
   }
 }
