@@ -248,6 +248,7 @@ p {
 
 .icon-container:hover {
   transform: scale(1.03);
+  transition: transform 500ms ease;
 }
 
 .icon-container input {
@@ -324,6 +325,7 @@ li.card {
 
 li.card:hover {
   transform: scale(1.03);
+  transition: transform 500ms ease;
 }
 
 .results-cards li.card {
@@ -484,6 +486,7 @@ li.card:hover {
 
 .activities li:hover {
   transform: scale(1.03);
+  transition: transform 500ms ease;
 }
 
 .activities li.full-size {
